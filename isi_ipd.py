@@ -81,7 +81,6 @@ def read_file(file_path):
         return f"An error occurred: {str(e)}"
 
 def openWindows(bot, link, tabId):
-    tabs.append(tabId)
     bot.execute_script(f"window.open('{link}', '{tabId}');")
 
 def openWindowsExecute(bot, link, tabId, javascript):
